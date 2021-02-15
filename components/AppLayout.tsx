@@ -32,6 +32,9 @@ function AppLayout ({ children }) {
                     <SubMenu key="contentHandle" title="콘텐츠 관리">
                         <Menu.Item key="content"><Link href="/content"><a>콘텐츠</a></Link></Menu.Item>
                     </SubMenu>
+                    <SubMenu key="eventHandle" title="이벤트 관리">
+                        <Menu.Item key="eventControl"><Link href="/eventControl"><a>이벤트 관리</a></Link></Menu.Item>
+                    </SubMenu>
                     </Menu>
                 </Col>
                 <Col xs={24} md={18}>
