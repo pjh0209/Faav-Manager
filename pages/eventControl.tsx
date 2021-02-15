@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import React from 'react';
 import AppLayout from '../components/AppLayout';
-import eventApplyList from '../components/eventApplyList';
+import EventApplyList from '../components/EventApplyList';
 
 function eventControl () {
+
     return (
         <AppLayout>
             <Head>
@@ -12,7 +13,7 @@ function eventControl () {
             <div>
                 <a>이벤트 신청 내역</a>
                 <div>
-                    <eventApplyList />
+                    <EventApplyList />
                 </div>
             </div>
             

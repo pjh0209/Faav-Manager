@@ -1,12 +1,25 @@
+import axios from 'axios';
 import React from 'react';
 
-function eventApplyList () {
+function EventApplyList () {
+    
     return (
         <div>
-            eventApplyList
+            EventApplyList
         </div>
     )
 
 }
 
-export default eventApplyList;
+EventApplyList.getInitialProps = async function() {
+    const res = await axios.get('https://test.faav.io/event')
+    const data = await res.data;
+
+    console.log(`Show data fetched. Count: ${data.length}`);
+
+    return {
+        data: data,
+    }
+};
+
+export default EventApplyList;
